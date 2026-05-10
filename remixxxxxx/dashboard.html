@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strava - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="header">
+    <div class="logo">🏃 Strava</div>
+    <div class="nav">
+        <a href="index.html">Beranda</a>
+        <a href="peta.html">Peta</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profil</a>
+    </div>
+</div>
+
+<div class="extra-nav">
+    <a href="aktivitas.html">📝 Catat Aktivitas</a>
+    <a href="fasilitas.html">🗺️ Fasilitas & Rute</a>
+    <a href="laporan.html">📊 Laporan Aktivitas</a>
+</div>
+
+<div class="container">
+    <div class="dashboard-header">
+        <h1>📈 Dashboard</h1>
+        <select class="period-dropdown" id="periodDropdown">
+            <option value="week">Minggu Ini</option>
+            <option value="month">Bulan Ini</option>
+            <option value="year">Tahun Ini</option>
+        </select>
+    </div>
+
+    <div class="metrics">
+        <div class="metric-card">
+            <div class="metric-icon">🏃</div>
+            <div class="metric-value" id="totalJarak">0</div>
+            <div class="metric-label">Total Jarak (km)</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-icon">🔥</div>
+            <div class="metric-value" id="totalKalori">0</div>
+            <div class="metric-label">Total Kalori (kcal)</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-icon">⏱️</div>
+            <div class="metric-value" id="totalDurasi">0</div>
+            <div class="metric-label">Total Durasi (menit)</div>
+        </div>
+    </div>
+
+    <div class="chart-section">
+        <h3>📊 Perkembangan Jarak Mingguan</h3>
+        <div class="chart-bars" id="weeklyChart"></div>
+    </div>
+
+    <div class="row">
+        <div class="badges-section">
+            <div class="section-title">🏅 Pencapaian</div>
+            <div class="badges-grid" id="badgesGrid"></div>
+        </div>
+        <div class="history-section">
+            <div class="section-title">📝 Riwayat Aktivitas Terbaru</div>
+            <ul class="activity-list" id="recentActivities"></ul>
+        </div>
+    </div>
+
+    <div class="chart-section">
+        <h3>📊 Aktivitas per Olahraga</h3>
+        <div class="sport-stats" id="sportStats"></div>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

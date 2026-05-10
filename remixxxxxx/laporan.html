@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strava - Laporan Aktivitas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container-medium">
+    <div class="card">
+        <h2 style="text-align: center;">Laporan Aktivitas</h2>
+        <p style="text-align: center">Riwayat latihan dan statistik kamu</p>
+    </div>
+
+    <div class="card">
+        <h2 style="text-align: center;">Ringkasan</h2>
+        <div class="stats-grid" id="summaryStats"></div>
+    </div>
+
+    <div class="card">
+        <h2 style="text-align: center;">Riwayat Aktivitas</h2>
+        <table class="activity-table">
+            <thead>
+                <tr><th>Tanggal</th><th>Olahraga</th><th>Durasi</th><th>Jarak</th><th>Status</th><th>Aksi</th></tr>
+            </thead>
+            <tbody id="aktivitasTableBody"></tbody>
+        </table>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="aktivitas.html">Catat Aktivitas</a>
+        <a href="fasilitas.html">Fasilitas & Rute</a>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

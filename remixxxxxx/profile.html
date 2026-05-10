@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strava - Profil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="header">
+    <div class="logo">🏃 Strava</div>
+    <div class="nav">
+        <a href="index.html">Beranda</a>
+        <a href="peta.html">Peta</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profil</a>
+    </div>
+</div>
+
+<div class="extra-nav">
+    <a href="aktivitas.html">📝 Catat Aktivitas</a>
+    <a href="fasilitas.html">🗺️ Fasilitas & Rute</a>
+    <a href="laporan.html">📊 Laporan Aktivitas</a>
+</div>
+
+<div class="container">
+    <div class="profile-header">
+        <div class="avatar">👤</div>
+        <div class="profile-name" id="username">Andi Saputra</div>
+        <div class="profile-location" id="userLocation">Jakarta, Indonesia</div>
+        <button class="btn-outline" id="editProfileBtn">✏️ Edit Profil</button>
+    </div>
+
+    <div class="lifetime-stats">
+        <div class="stat-card">
+            <div class="stat-value" id="totalDistanceLifetime">0</div>
+            <div class="stat-label">Total Jarak Seumur Hidup (km)</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="totalHoursLifetime">0</div>
+            <div class="stat-label">Total Waktu (jam)</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="totalActivitiesLifetime">0</div>
+            <div class="stat-label">Total Aktivitas</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="accessibility-section">
+            <div class="section-title">♿ Pengaturan Aksesibilitas</div>
+            <div class="setting-item">
+                <div><div class="setting-label">Mode Kontras Tinggi</div><div class="setting-desc">Meningkatkan kontras warna untuk kemudahan membaca</div></div>
+                <div class="toggle" id="highContrastToggle"><div class="toggle-slider"></div></div>
+            </div>
+            <div class="setting-item">
+                <div><div class="setting-label">Ukuran Teks</div><div class="setting-desc">Sesuaikan ukuran font (12px - 24px)</div></div>
+                <div class="slider-container"><span>A-</span><input type="range" id="fontSizeSlider" min="12" max="24" value="16"><span>A+</span></div>
+            </div>
+            <div class="setting-item">
+                <div><div class="setting-label">Mode Gelap</div><div class="setting-desc">Tampilan gelap untuk kenyamanan mata</div></div>
+                <div class="toggle" id="darkModeToggle"><div class="toggle-slider"></div></div>
+            </div>
+        </div>
+
+        <div class="wearable-section">
+            <div class="section-title">⌚ Perangkat & Koneksi</div>
+            <button class="btn-wearable" id="hubungkanWearableBtn">+ Hubungkan Wearable</button>
+            <ul class="device-list" id="deviceList">
+                <li>📱 Apple Watch (Tidak terhubung)</li>
+                <li>⌚ Garmin (Tidak terhubung)</li>
+                <li>📱 Samsung Watch (Tidak terhubung)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
