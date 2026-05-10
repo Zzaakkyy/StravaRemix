@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strava - Fasilitas & Rute Populer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container-medium">
+    <div class="card">
+        <h2 style="text-align: center;">Fasilitas Olahraga Terdekat</h2>
+        <div class="filter-group horizontal">
+            <div class="filter-chip" data-filter="all">Semua</div>
+            <div class="filter-chip" data-filter="water">💧 Water Station</div>
+            <div class="filter-chip" data-filter="toilet">🚻 Toilet</div>
+            <div class="filter-chip" data-filter="lampu">💡 Lampu</div>
+            <div class="filter-chip" data-filter="parkir">🅿️ Parkir</div>
+        </div>
+        <div id="fasilitasList"></div>
+    </div>
+
+    <div class="card">
+        <h2 style="text-align: center;">Rute Populer</h2>
+        <div id="ruteList"></div>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="aktivitas.html">Catat Aktivitas</a>
+        <a href="laporan.html">Laporan Aktivitas</a>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
