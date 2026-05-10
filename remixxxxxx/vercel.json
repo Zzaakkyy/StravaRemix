@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/beranda", "destination": "/index.html" },
+    { "source": "/dashboard", "destination": "/dashboard.html" },
+    { "source": "/peta", "destination": "/peta.html" },
+    { "source": "/profile", "destination": "/profile.html" },
+    { "source": "/aktivitas", "destination": "/aktivitas.html" },
+    { "source": "/fasilitas", "destination": "/fasilitas.html" },
+    { "source": "/laporan", "destination": "/laporan.html" }
+  ]
+}
